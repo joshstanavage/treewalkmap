@@ -229,7 +229,7 @@ textarea {
   line-height: .7;
 }
 .tree_hero{
-  background-image: linear-gradient(0deg, rgba(48,55,61,1) -30%, rgba(2,0,36,0) 70%), url("../img/mobileheroc.jpg"); 
+  background-image: linear-gradient(0deg, rgba(48,55,61,1) -30%, rgba(2,0,36,0) 70%), url("../img/blacktupelo.jpg"); 
   background-size: cover;
   min-height: 650px;
   padding: 0% 5%;
@@ -303,10 +303,28 @@ button.accordion.is-open {
 /* MAP.JS CSS BELOW */
 
 
-#mapid { height: 800px; }
+#mapid { height: 300px; }
 
+.black {
+  background:#30373D;
+  background-size: cover;
+  height: 100vh;
+  width: 85%; 
+  padding-left: 10%;
+  padding-right: 5%;
+}
 
+.white_text {
+  color: #efefef;
+}
 
+.fullwidth {
+  width: 95%;
+  text-decoration: none;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-bottom: 20px solid #fff;
+}
 
 /* ==========================================================================
    Helper classes
