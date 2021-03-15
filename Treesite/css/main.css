@@ -303,7 +303,8 @@ button.accordion.is-open {
 /* MAP.JS CSS BELOW */
 
 
-#mapid { height: 300px; }
+#mapid { height: 80vh; }
+
 
 .black {
   background:#30373D;

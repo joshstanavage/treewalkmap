@@ -27,12 +27,30 @@ accordionBtns.forEach((accordion) => {
   };
 });
 
-var mymap = L.map('mapid').setView([72.2573872, 41.808 ], 15.91);
-L.tileLayer('https://api.mapbox.com/styles/v1/jstanavage/ckgfk17wv86e419qti0wfv98l.html?fresh=true&title=view&access_token=pk.eyJ1IjoianN0YW5hdmFnZSIsImEiOiJja2dmanh5bHIwc2g4MnFwZHp2eDJybTB1In0.hVi2olDE2ekOv_8Vq3L4cw',  {
+var mymap = L.map('mapid').setView([41.8084891,-72.2562546 ], 15.9);
+L.tileLayer('https://api.mapbox.com/styles/v1/jstanavage/ckgfk17wv86e419qti0wfv98l/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoianN0YW5hdmFnZSIsImEiOiJja2dmanh5bHIwc2g4MnFwZHp2eDJybTB1In0.hVi2olDE2ekOv_8Vq3L4cw',  {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
     maxZoom: 18,
-    id: 'mapbox/streets-v11',
+    id: 'mapbox.streets',
     tileSize: 512,
     zoomOffset: -1,
-    accessToken: 'pk.eyJ1IjoianN0YW5hdmFnZSIsImEiOiJja2dmanh5bHIwc2g4MnFwZHp2eDJybTB1In0.hVi2olDE2ekOv_8Vq3L4cw'
-}).addTo(mymap);
+    accessToken: 'pk.eyJ1IjoianN0YW5hdmFnZSIsImEiOiJja2dmanh5bHIwc2g4MnFwZHp2eDJybTB1In0.hVi2olDE2ekOv_8Vq3L4cw',
+  }).addTo(mymap);
+
+ map.locate({setView: true, maxZoom: 16});
+  function onLocationFound(e) {
+    var radius = e.accuracy;
+
+    L.marker(e.latlng).addTo(map)
+        .bindPopup("You are within " + radius + " meters from this point").openPopup();
+
+    L.circle(e.latlng, radius).addTo(map);
+}
+
+map.on('locationfound', onLocationFound);
+function onLocationError(e) {
+  alert(e.message);
+}
+
+map.on('locationerror', onLocationError);
+
