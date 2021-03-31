@@ -300,11 +300,86 @@ button.accordion.is-open {
   transition: max-height 0.2s ease-in-out;
 }
 
+
+.wrapper22 {
+  overflow: hidden;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-gap: 10px;
+}
+
+.gallery {
+  overflow: scroll;
+
+  scroll-snap-type: x mandatory;
+}
+
+.gallery__img {
+  display: block;
+  max-width: 100%;
+  scroll-snap-align: start;
+  margin-bottom: 10px;
+  min-height: 100vh;
+  object-fit: cover;
+}
+
+.lil-nav {
+  display: block;
+  max-width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.lil-nav a {
+    height: 200px;
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+
+.lil-nav__img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+  max-height: 100%;
+}
 /* MAP.JS CSS BELOW */
 
 
 #mapid { height: 80vh; }
 
+.leaflet-popup-content-wrapper {
+  width: 400px;
+}
+
+/*.leaflet-popup-content-wrapper .leaflet-popup-content {
+}
+
+.leaflet-popup-tip-container {
+}
+*/
+
+.flex
+{
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 10px;
+
+}
+
+.flex1{
+  width: 200px;
+  padding-left: 20px;
+  line-height: 2;
+}
+#overidesmall{
+  font-size: 18px;
+}
+.flex1 p, a{
+  line-height: 1;
+  
+}
 
 .black {
   background:#30373D;
