@@ -93,7 +93,7 @@ textarea {
    }
 
    h1{
-    font-size: 3.5em;
+    font-size: 80px;
     font-family: circe,sans-serif;
     font-weight: 700;
     color: white;
@@ -102,7 +102,7 @@ textarea {
    }
 
    h2{
-    font-size: 3.2em;
+    font-size: 55px;
     font-family: circe,sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -110,7 +110,7 @@ textarea {
    }
 
    h3{
-    font-size: 1.5em;
+    font-size: 40px;
     font-family: circe,sans-serif;
     font-weight: 700;
     color: #30373D;
@@ -119,8 +119,9 @@ textarea {
    }
 
    .hero {
-    background-image: url("../img/mobileheroc.jpg"); 
-    background-size: cover;
+    min-height:100%;
+    background:linear-gradient(0deg, rgba(61, 61, 61, 0.3), rgba(61, 61, 61, 0.2)), url("../img/mobileheroc.jpg");
+    background-size:cover;
     min-height: 650px;
     padding: 0% 5%;
     padding-top: 30px;
@@ -222,27 +223,27 @@ textarea {
 }
 
 .treename{
-  line-height: .4;
   align-self: flex-end;
 }
+
 .treename h3 {
-  line-height: .7;
+  line-height: 1;
+  margin: 0;
 }
 .tree_hero{
   background-image: linear-gradient(0deg, rgba(48,55,61,1) -30%, rgba(2,0,36,0) 70%), url("../img/blacktupelo.jpg"); 
   background-size: cover;
   min-height: 650px;
-  padding: 0% 5%;
   color: white;
   text-decoration: none;
   display:flex;
   width: 100%;
-  align-self: flex-end;
   margin: 0 auto;
 
 }
 .treesilo img{
-  width: 70%;
+
+  width: 80%;
   max-width: 300px;
 }
 .treesilo{
@@ -305,13 +306,12 @@ button.accordion.is-open {
   overflow: hidden;
   height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 6fr;
   grid-gap: 10px;
 }
 
 .gallery {
   overflow: scroll;
-
   scroll-snap-type: x mandatory;
 }
 
@@ -325,7 +325,7 @@ button.accordion.is-open {
 }
 
 .lil-nav {
-  display: block;
+  display: none;
   max-width: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -338,11 +338,30 @@ button.accordion.is-open {
 
 
 .lil-nav__img {
-  display: block;
+  display: none;
   max-width: 100%;
   object-fit: cover;
   max-height: 100%;
 }
+
+a {
+  text-decoration: none;
+}
+
+a.linky:link {
+  color: #30373D;
+  border-bottom: 1px solid #B15654;
+}
+a.linky:visited  {
+  color:  #B15654;
+  border-bottom: 1px solid #B15654;
+}
+a.linky:hover{
+  color: #EBEBEB;
+  border-bottom: 1px solid #30373D;
+  
+}
+
 /* MAP.JS CSS BELOW */
 
 
@@ -371,16 +390,19 @@ button.accordion.is-open {
 .flex1{
   width: 200px;
   padding-left: 20px;
-  line-height: 2;
+  padding-right: 30px;
+  line-height: 1;
 }
 #overidesmall{
-  font-size: 18px;
-}
-.flex1 p, a{
+  font-size: 20px;
   line-height: 1;
-  
+  margin-top: 25px;
+  margin-bottom: 0px;
 }
-
+.closertitle{
+  margin-top: 6px;
+  margin-bottom: 20px;
+}
 .black {
   background:#30373D;
   background-size: cover;
@@ -394,12 +416,40 @@ button.accordion.is-open {
   color: #efefef;
 }
 
+.smaller {
+  font-size: 24pt;
+}
+
 .fullwidth {
   width: 95%;
   text-decoration: none;
   padding-top: 40px;
   padding-bottom: 40px;
   border-bottom: 20px solid #fff;
+}
+
+.whole{
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+}
+img.half {
+  width:45%;
+  padding: 2.5%;
+  max-width: 300px;
+}
+.morephotos{
+  width: 15%;
+  font-size: 14px;
+  align-self: flex-end;
+}
+.center{
+  margin: 0 auto;
+}
+footer{
+  height: 50px; 
+  margin-top:30px;
+  background-color: #30373D;
 }
 
 /* ==========================================================================
@@ -409,6 +459,9 @@ button.accordion.is-open {
 /*
  * Hide visually and from screen readers
  */
+ svg:hover {
+  fill: red;
+}
 
 .hidden,
 [hidden] {
@@ -493,11 +546,42 @@ button.accordion.is-open {
 @media only screen and (min-width: 600em) {
   /* Style adjustments for viewports that meet the condition */
  
- html {
-    font-size: 2vw;
-  }
+
+}
+.container {
+  width: 80%;
+  max-width: 960px;
+  margin: 50px auto;
+}
+img.half {
+  width:35%;
+  padding: 0 2.5%;
+  max-width: 300px;
+}
+#center {
+  max-width: 80%;
+  margin: 0 auto;
+  padding-top: 50px;
 }
 
+.lil-nav {
+  display: block;
+  max-width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.lil-nav__img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+  max-height: 100%;
+}
+
+.wrapper22 {
+  grid-template-columns: 1fr 5fr;
+
+}
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
   (min-resolution: 1.25dppx),

@@ -247,14 +247,14 @@ L.tileLayer('https://api.mapbox.com/styles/v1/jstanavage/ckgfk17wv86e419qti0wfv9
 
 var firstIcon = L.icon({
   title: "London Plane",
-  iconUrl: '../img/markers/markers-01.png',
+  iconUrl: 'img/markers/dark-01.svg',
 
   iconSize:     [30, 50], // size of the icon
   iconAnchor:   [10, 40], // point of the icon which will correspond to marker's location
   popupAnchor:  [6, -40] // point from which the popup should open relative to the iconAnchor
 });
 L.marker([41.8081106, -72.2567718], {icon: firstIcon}).addTo(mymap);
-L.marker([41.8081106, -72.2567718], {icon: firstIcon}).addTo(mymap).bindPopup("<div class='flex'> <div class='flex2'> <img width= '150px' src='../img/cutouts/cutouts-01.png'> </div> <div class='flex1'> <h2 id='overidesmall'> London Plane</h2> <p> Look for: Olive-green to creamy bark color, Simple green 6 to 7 inch leaves</p> <p> More on the London Planetree</p> </div> </div> "
+L.marker([41.8081106, -72.2567718], {icon: firstIcon}).addTo(mymap).bindPopup("<div class='flex'> <div class='flex2'> <img width= '150px' src='img/cutouts/cutouts-01.png'> </div> <div class='flex1'> <h2 id='overidesmall'> London Plane</h2> <h5 class='closertitle' >Platanus x acerifolia </h5> <p> <em>Look for: </em> Olive-green to creamy bark color, Simple green 6-7 inch leaves</p> <a class='linky' href='londonplanetree.html'> <p> More on London Planetree  <i class='fas fa-chevron-right'></i></p> </a> </div> </div> "
 
 );
 
