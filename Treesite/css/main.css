@@ -445,6 +445,11 @@ img.half {
 }
 .center{
   margin: 0 auto;
+  text-align: center;
+}
+.standard{
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 footer{
   height: 50px; 
