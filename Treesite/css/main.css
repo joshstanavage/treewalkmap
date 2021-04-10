@@ -130,6 +130,7 @@ textarea {
   }
   nav {
     display: flex;
+    position: relative;
     justify-content: space-between;
   }
 
@@ -203,6 +204,7 @@ textarea {
   text-decoration: none;
 
  }
+ 
 .headerscroll {
 /*  
   position: fixed;
@@ -224,11 +226,14 @@ textarea {
 
 .treename{
   align-self: flex-end;
+  justify-content: center;
+  padding-bottom: 20px;
 }
 
 .treename h3 {
   line-height: 1;
   margin: 0;
+  
 }
 .tree_hero{
   background-image: linear-gradient(0deg, rgba(48,55,61,1) -30%, rgba(2,0,36,0) 70%), url("../img/blacktupelo.jpg"); 
@@ -245,6 +250,7 @@ textarea {
 
   width: 80%;
   max-width: 300px;
+  margin-bottom: 20px;
 }
 .treesilo{
   align-self: flex-end;
@@ -257,7 +263,7 @@ textarea {
 }
 #absolute {
   position: absolute;
-  left:10;
+  padding-left: 5%;
 }
 
 button.accordion {
@@ -301,48 +307,6 @@ button.accordion.is-open {
   transition: max-height 0.2s ease-in-out;
 }
 
-
-.wrapper22 {
-  overflow: hidden;
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 6fr;
-  grid-gap: 10px;
-}
-
-.gallery {
-  overflow: scroll;
-  scroll-snap-type: x mandatory;
-}
-
-.gallery__img {
-  display: block;
-  max-width: 100%;
-  scroll-snap-align: start;
-  margin-bottom: 10px;
-  min-height: 100vh;
-  object-fit: cover;
-}
-
-.lil-nav {
-  display: none;
-  max-width: 100%;
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
-.lil-nav a {
-    height: 200px;
-    display: flex;
-    margin-bottom: 10px;
-  }
-
-
-.lil-nav__img {
-  display: none;
-  max-width: 100%;
-  object-fit: cover;
-  max-height: 100%;
-}
 
 a {
   text-decoration: none;
@@ -434,7 +398,7 @@ a.linky:hover{
   padding-bottom: 20px;
 }
 img.half {
-  width:45%;
+  width:40%;
   padding: 2.5%;
   max-width: 300px;
 }
@@ -456,7 +420,48 @@ footer{
   margin-top:30px;
   background-color: #30373D;
 }
+* { box-sizing: border-box; }
 
+.carousel {
+  background: #FAFAFA;
+}
+
+.carousel-cell-image {
+  display: block;
+  margin-right: 10px;
+  height: 400px;
+  min-width: 200px;
+  opacity: 0;
+  -webkit-transition: opacity 0.4s;
+          transition: opacity 0.4s;
+}
+
+/* fade in lazy loaded image */
+.carousel-cell-image.flickity-lazyloaded,
+.carousel-cell-image.flickity-lazyerror {
+  opacity: 1;
+}
+.flickity-button-icon:hover {
+  fill: #B15654;
+}
+
+.gallerytitle {
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+#left {
+  margin-left: 5%;
+  font-size: 28px;
+  
+}
+p.closer {
+  line-height: 1.2;
+  font-size: 16px;
+  margin: 0 auto;
+
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -548,44 +553,44 @@ footer{
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 600em) {
+@media only screen and (min-width: 700px) {
   /* Style adjustments for viewports that meet the condition */
  
+      
+        #center {
+          max-width: 80%;
+          margin: 0 auto;
+          text-align:center;
+        }
+        .gallerytitle {
+          font-size: 48px;
+          line-height: 1.2;
+        }
+        p.closer {
+          line-height: 1.2;
+          font-size: 24px;
+          padding-bottom: 9%;
+        }
+        .container {
+          width: 80%;
+          max-width: 980px;
+          margin: 50px auto;
+        }
+       
+       
+}
+@media only screen and (min-width: 1000px) {
+.tree_hero{
+  background-image: linear-gradient(0deg, rgba(48,55,61,1) -30%, rgba(2,0,36,0) 70%), url("../img/blacktupelo.jpg"); 
+  background-size: cover;
 
-}
-.container {
-  width: 80%;
-  max-width: 960px;
-  margin: 50px auto;
-}
-img.half {
-  width:35%;
-  padding: 0 2.5%;
-  max-width: 300px;
-}
-#center {
-  max-width: 80%;
+  color: white;
+  text-decoration: none;
+  display:flex;
+  width: 100%;
   margin: 0 auto;
-  padding-top: 50px;
+
 }
-
-.lil-nav {
-  display: block;
-  max-width: 100%;
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
-
-.lil-nav__img {
-  display: block;
-  max-width: 100%;
-  object-fit: cover;
-  max-height: 100%;
-}
-
-.wrapper22 {
-  grid-template-columns: 1fr 5fr;
-
 }
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
