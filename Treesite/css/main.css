@@ -162,38 +162,25 @@ textarea {
     height: 100%;
   }
   .ms2{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    perspective: 8px;
-    perspective-origin: -40%;
+    background-image: url("../img/home_sunrise.jpg");
+    min-height: 80%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .ms2-content, .ms3-content{
+    padding: 10%;
+  
+  }
+  .ms3-img1{
+    display: none;
+  }
+  .ms3-img2{
     display: flex;
+    width: 95%;
   }
-  .ms2-content{
-  color: white;
-  text-align: right;
-  padding-top: 30%;
-  padding-right: 10%;
-  margin-bottom: 50px;
-  transform-origin: 0;
-  z-index: 2;
-  transform: translateZ(2px) scale(0.625);
-  }
-  .ms2-img{
-    background-color: #30373D;
-    align-content: space-between;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform: translateZ(-20x);
-  }
-  .ms3 {
-    padding: 12% 5%;
-  }
+
  .nav_normal {
   background-color: #30373D;
   background-size: cover;
@@ -1008,12 +995,70 @@ p.closer {
 
         }
 
-       
-       
-}
-@media only screen and (min-width: 1000px) {
+        .ms1{
+          position: relative;
+          min-height: 900px;
+          margin-top: 8%;
+        }
+        .ms1-content, img.ms1-img{          
+        position: absolute;
 
+        }
+      .ms1-img{
+          width: 70%;
+          margin-left: 30%;
+          margin-top: 5%;
+        }
+        .ms1-content{
+          width: 60%;
+          padding: 5%;
+          margin-top: 20%;
+          background-image: none;
+          background-color: #fff;
+          z-index: 9;
+        }
+        .hero {
+          min-height:100%;
+          background:linear-gradient(0deg, rgba(61, 61, 61, 0.3), rgba(61, 61, 61, 0.2)), url("../img/videoherolower.mp4");
+          background-size:cover;
+          min-height: 650px;
+          padding: 0% 5%;
+          padding-top: 30px;
+          color: white;
+          text-decoration: none;
+        }  
+        .ms2{
+          margin-top: 20%;
+        }
+  
+        #ms3{
+          display: flex;
+          width: 90%;
+          flex-direction: row;
+          justify-content: flex-start;
+          padding: 2%;
+  
+        }
+        .ms3-img1{
+          display: flex;
+          width: 95%;
+        }
+        .ms3-img2{
+          display: flex;
+          width: 95%;
+        }
+        .ms3-p{
+          padding-top: 30px;
+        }
+
+        .ms3-img, .ms3-content{
+          padding: 2%;
+        }
+
+     
+    
 }
+
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
   (min-resolution: 1.25dppx),

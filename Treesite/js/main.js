@@ -736,9 +736,8 @@ L.marker([41.8107089,   -72.2571844], {icon: thirtynineIcon}).addTo(mymap).bindP
 mymap.locate({setView: true, maxZoom: 16});
  function onLocationFound(e) {
   var radius = e.accuracy;
-
   L.marker(e.latlng).addTo(mymap)
-      .bindPopup("You are within " + radius + " meters from this point").openPopup();
+      .bindPopup("You are within " + radius + " meters from this point")
 
   L.circle(e.latlng, radius).addTo(mymap);
 }
