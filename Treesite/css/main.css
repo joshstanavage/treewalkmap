@@ -129,10 +129,18 @@ textarea {
     text-decoration: none;
   }
   nav {
-    display: flex;
-    position: relative;
-    justify-content: space-between;
+   width: 100%;
   }
+
+  #menu{
+    float: right;
+    margin-right: 5%;
+  }
+  #logo{
+    float: left;
+    margin-right: 5%;
+  }
+
 
   .hero-content h1, .hero-content p {
     text-align: right;
@@ -212,15 +220,109 @@ textarea {
 }
 
 .treename{
-  align-self: flex-end;
-  justify-content: center;
   padding-bottom: 20px;
+  width: 45%;
+  align-self: flex-start;
 }
 
 .treename h3 {
   line-height: 1;
   margin: 0;
   
+}
+
+.treesilo img{
+  width: 100%;
+}
+.treesilo {
+ width: 40%;
+ margin-left: 10%;
+ margin-right: 2%;
+ padding-bottom: 10px;
+ max-width: 300px;
+}
+.bottomtop{
+display: flex;
+
+align-self: flex-end;
+
+}
+.tree22{
+  display: flex;
+
+}
+
+.nearbysection{
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom:20px;
+  background:#ebebeb;
+  text-align: center;
+  margin: 0 auto;
+    
+}
+.nearby-content{
+  width: 80%;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+.n-1{
+  display: flex;
+  width: 8em;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  margin-bottom: 1em;
+  border-bottom: 8px solid #B15654;
+  height: 8em;
+  background-size: cover;
+  background-image: linear-gradient(0deg, rgba(48,55,61,1) -30%, rgba(2,0,36,0) 70%), url("../img/gallery/01/03.jpg"); 
+}
+
+
+.n-2{
+  display: flex;
+  border-bottom: 8px solid #B15654;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  width: 8em;
+  height: 8em;
+  background-size: cover;
+  background-image: linear-gradient(0deg, rgba(48,55,61,1) -30%, rgba(2,0,36,0) 70%), url("../img/gallery/03/03.jpg"); 
+}
+.n-1b, .n-2b{
+  align-self: flex-end;
+
+}
+p.smallnearby{
+  font-size: 22px;
+  text-align: left;
+  font-family: circe,sans-serif;
+  font-weight: 700;
+  margin: 0px 10px;
+  margin-bottom: 10px;
+  color: white;
+  font-style: normal;
+  text-transform: uppercase;
+}
+h1.smallnearby{
+  font-size: 70px;
+  opacity: .8;
+  text-align: left;
+  font-family: circe,sans-serif;
+  font-weight: 700;
+  margin-left: 10px;
+  margin-bottom: 2px;
+  color: #B15654;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.container {
+  width: 80%;
+  max-width: 600px;
+  margin: 50px auto;
 }
 .tree_hero{
   background-image: linear-gradient(0deg, rgba(48,55,61,1) -30%, rgba(2,0,36,0) 70%), url("../img/gallery/01/03.jpg"); 
@@ -664,20 +766,7 @@ textarea {
 
 }
 
-.treesilo img {
-  width: 80%;
-  max-width: 300px;
-  margin-bottom: 20px;
-}
-.treesilo{
-  align-self: flex-end;
-  text-align: center;
-}
-.container {
-  width: 80%;
-  max-width: 600px;
-  margin: 50px auto;
-}
+
 #absolute {
   position: absolute;
   padding-left: 5%;
@@ -989,10 +1078,8 @@ p.closer {
           padding-bottom: 9%;
         }
         .container {
-          width: 80%;
-          max-width: 980px;
+          max-width: 800px;
           margin: 50px auto;
-
         }
 
         .ms1{
@@ -1059,6 +1146,36 @@ p.closer {
     
 }
 
+@media only screen and (min-width: 1220px){
+ 
+
+  .whole{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  .prt1 {
+    width: 70%;
+
+  }
+.nearbysection {
+  margin: 0;
+  padding: 0px 40px;
+
+}
+  .prt2 {
+    width: 20%;
+    padding: 0;
+    margin-top: 20px;
+    background: #fff;
+    
+  }
+  .lessmargin {
+    margin-top: 10px;
+    font-size: 22px;
+  }
+}
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
   (min-resolution: 1.25dppx),
