@@ -968,6 +968,89 @@ p.closer {
   margin: 0 auto;
 
 }
+.tree-search {
+  width: 90%;
+  margin-left: 5%;
+  display: flex;
+  padding-bottom: 20px;
+  border-bottom: 1px solid grey;
+}
+
+.tree-search-01 img{
+  margin-top: 20px;
+  width: 80%;
+  padding: 10px;
+  margin: 0 auto;
+}
+.tree-search-01{
+  width: 40%;
+  height: auto;
+  max-width: 150px;
+  margin-left: 5%;
+  margin-top: 20px;
+}
+.tree-search-02{
+  width: 55%;
+}
+
+.smallersearch {
+  font-size: 28px;
+  line-height: 1;
+  padding: 0;
+  margin-bottom: 3px;
+}
+.smallersearch2{
+  font-size: 20px;
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.smallersearch3{
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+}
+
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  font-size: 14pt;
+  border: 3px solid #30373D;
+  border-right: none;
+  padding: 5px;
+  height: 36px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #30373D;
+}
+
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 3px solid #30373D;
+  background: #30373D;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 80%;
+  max-width: 700px;
+  margin-left: 5%;
+  margin-top: 20px;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -1141,7 +1224,6 @@ p.closer {
           padding: 2%;
         }
 
-     
     
 }
 
@@ -1173,6 +1255,19 @@ p.closer {
   .lessmargin {
     margin-top: 10px;
     font-size: 22px;
+  }
+  .wrap{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 20px;
+
+  }
+  .tree-search {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    padding-bottom: 20px;
+    border-bottom: 1px solid grey;
   }
 }
 @media print,
