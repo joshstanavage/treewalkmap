@@ -134,14 +134,22 @@ textarea {
 
   #menu{
     float: right;
-    margin-right: 5%;
   }
   #logo{
     float: left;
     margin-right: 5%;
   }
 
+  .white_text_menu{
+    color: white;
+    font-size: 18px;
+  }
+  .white_text_menu2{
+    color: white;
+    font-size: 14px;
+  }
 
+  
   .hero-content h1, .hero-content p {
     text-align: right;
     align-items: right;
@@ -170,7 +178,8 @@ textarea {
     height: 100%;
   }
   .ms2{
-    background-image: url("../img/home_sunrise.jpg");
+    background-color: #30373D;
+    color: white;
     min-height: 80%;
     background-attachment: fixed;
     background-position: center;
@@ -199,7 +208,15 @@ textarea {
   text-decoration: none;
 
  }
+ .watermark-full{
+   padding-top: 30px;
+ }
  
+ .watermark-1 img{
+   width: 80%;
+  max-width: 150px;
+} 
+
 .headerscroll {
 /*  
   position: fixed;
@@ -921,6 +938,9 @@ img.half {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+.standardbottom{
+  padding-bottom: 30px;
+}
 footer{
   height: 50px; 
   margin-top:30px;
@@ -1046,10 +1066,15 @@ p.closer {
 
 /*Resize the wrap to see the search bar change!*/
 .wrap{
-  width: 80%;
+  width: 90%;
   max-width: 700px;
   margin-left: 5%;
   margin-top: 20px;
+}
+
+.section, .video-container, .color-overlay {
+  display: none;
+
 }
 /* ==========================================================================
    Helper classes
@@ -1144,7 +1169,22 @@ p.closer {
 
 @media only screen and (min-width: 700px) {
   /* Style adjustments for viewports that meet the condition */
- 
+  .watermark-full{
+    padding-top: 30px;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+
+  .watermark-1{
+    width: 20%;
+    padding-top: 20px;
+  }
+  .watermark-2{
+    width: 70%;
+
+  }
       
         #center {
           max-width: 80%;
@@ -1187,17 +1227,18 @@ p.closer {
           background-color: #fff;
           z-index: 9;
         }
-        .hero {
-          min-height:100%;
-          background-image:linear-gradient(0deg, rgba(61, 61, 61, 0.3), rgba(61, 61, 61, 0.2)), url("../img/videoherolower.mp4");
-          background-size:cover;
-          min-height: 650px;
-          padding: 0% 5%;
-          padding-top: 30px;
-          text-decoration: none;
-        }  
+      
         .ms2{
           margin-top: 20%;
+        }
+        .ms2{
+          background-image: url("../img/home_sunrise.jpg");
+          min-height: 80%;
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          color: #30373D;
         }
   
         #ms3{
@@ -1211,6 +1252,7 @@ p.closer {
         .ms3-img1{
           display: flex;
           width: 95%;
+          padding-top: 40x;
         }
         .ms3-img2{
           display: flex;
@@ -1223,6 +1265,8 @@ p.closer {
         .ms3-img, .ms3-content{
           padding: 2%;
         }
+       
+         
 
     
 }
@@ -1269,6 +1313,43 @@ p.closer {
     padding-bottom: 20px;
     border-bottom: 1px solid grey;
   }
+  .hero{
+    display: none;
+  }
+    .section {
+      position: relative;
+      width: 100%;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+    }
+
+   .contentcontent {
+      padding-top: 50px;
+      z-index: 1;
+      opacity: 1;
+      margin: 0 auto;
+      width: 90%;
+      color: white;
+    }
+    
+   .hero-content {
+     padding-top: 75px;
+ 
+  }
+    .vidwidth{
+      width: 100%;
+   
+    }
+    .video-container {
+      display: flex;
+      min-height: 700px;
+      position: absolute;
+      
+      zoom: 0%;
+      width: 100%;
+    }
 }
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),

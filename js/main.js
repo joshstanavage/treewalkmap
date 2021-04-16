@@ -733,18 +733,21 @@ L.marker([41.8107089,   -72.2571844], {icon: thirtynineIcon}).addTo(mymap);
 L.marker([41.8107089,   -72.2571844], {icon: thirtynineIcon}).addTo(mymap).bindPopup("<div class='flex'> <div class='flex2'> <img width= '150px' src='img/cutouts/cutouts-39.png'> </div> <div class='flex1'> <h2 id='overidesmall'>Sourwood</h2> <h5 class='closertitle' >#5809 | Oxydendrum	arboreum </h5> <p> <em>Look for: </em> Lance-shaped leaves ranging from 3 to 8 inches long, small creamy-white flower clusters </p> <a class='linky' href='trees/37-sourwood.html'> <p> More on Sourwood <i class='fas fa-chevron-right'></i></p> </a> </div> </div> "
 
 );
-mymap.locate({setView: true, maxZoom: 16});
- function onLocationFound(e) {
-  var radius = e.accuracy;
-  L.marker(e.latlng).addTo(mymap)
-      .bindPopup("You are within " + radius + " meters from this point")
 
-  L.circle(e.latlng, radius).addTo(mymap);
+function myFunction() {
+  var input, filter, treemain, trees, a, i, txtValue;
+  input = document.getElementById('myInput');
+  filter = input.value.toUpperCase();
+  treemain = document.getElementById("tree-search");
+  trees = document.getElementsByClassName('tree-search');
+
+  for (i = 0; i < trees.length; i++) {
+    a = trees[i].getElementsByTagName("a")[0];
+    txtValue = a.textContent || a.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      trees[i].style.display = "";
+    } else {
+      trees[i].style.display = "none";
+    }
+  }
 }
-
-mymap.on('locationfound', onLocationFound);
-function onLocationError(e) {
-  alert(e.message);
-}
-
-mymap.on('locationerror', onLocationError);
