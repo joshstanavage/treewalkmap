@@ -1347,8 +1347,6 @@ p.closer {
       display: flex;
       min-height: 700px;
       position: absolute;
-      
-      zoom: 0%;
       width: 100%;
     }
 }
