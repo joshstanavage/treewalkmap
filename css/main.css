@@ -920,14 +920,18 @@ a.linky:hover{
   flex-wrap: wrap;
   padding-bottom: 20px;
 }
-img.half {
-  width:40%;
+.half {
+  width: 40%;
   padding: 2.5%;
+}
+img.half{
   max-width: 300px;
 }
 .morephotos{
   width: 15%;
   font-size: 14px;
+  margin-left: 5px;
+  margin-bottom: 15px;
   align-self: flex-end;
 }
 .center{
