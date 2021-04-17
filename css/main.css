@@ -15,6 +15,8 @@ html {
   color: #222;
   font-size: calc(1em + 1vw);
   line-height: 1.4;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 /*
@@ -90,6 +92,8 @@ textarea {
     font-size: 1em;
     font-family: 'Belleza', sans-serif;
     margin: 0 auto;
+    max-width: 100%;
+    overflow-x: hidden;
    }
 
    h1{
