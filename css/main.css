@@ -191,7 +191,7 @@ textarea {
     background-size: cover;
   }
   .ms2-content, .ms3-content{
-    padding: 10%;
+    padding: 5%;
   
   }
   .ms3-img1{
@@ -287,7 +287,6 @@ align-self: flex-end;
 .n-2{
   display: flex;
   border-bottom: 8px solid #B15654;
- 
   width: 8em;
   height: 8em;
   background-size: cover;
@@ -302,7 +301,7 @@ p.smallnearby{
   text-align: left;
   font-family: circe,sans-serif;
   font-weight: 700;
-  margin: 0px 10px;
+  margin: 0px 5px;
   margin-bottom: 10px;
   color: white;
   font-style: normal;
