@@ -114,7 +114,7 @@ textarea {
    }
 
    h3{
-    font-size: 40px;
+    font-size: 30px;
     font-family: circe,sans-serif;
     font-weight: 700;
     color: #30373D;
@@ -221,9 +221,6 @@ textarea {
   max-width: 150px;
 } 
 
-
-
-
 .treename{
   padding-bottom: 20px;
   width: 40%;
@@ -240,7 +237,7 @@ textarea {
   width: 100%;
 }
 .treesilo {
- width: 40%;
+ width: 35%;
  margin-left: 7%;
  margin-right: 2%;
  padding-bottom: 10px;
@@ -248,7 +245,7 @@ textarea {
 }
 .bottomtop{
 display: flex;
-
+margin: 0 auto;
 align-self: flex-end;
 
 }
@@ -1157,6 +1154,16 @@ p.closer {
 
 @media only screen and (min-width: 700px) {
   /* Style adjustments for viewports that meet the condition */
+
+  h3{
+    font-size: 40px;
+    font-family: circe,sans-serif;
+    font-weight: 700;
+    color: #30373D;
+    font-style: normal;
+    text-transform: uppercase;
+   }
+
   .watermark-full{
     padding-top: 30px;
     display: flex;
