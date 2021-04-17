@@ -106,7 +106,7 @@ textarea {
    }
 
    h2{
-    font-size: 55px;
+    font-size: 46px;
     font-family: circe,sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -1145,7 +1145,25 @@ p.closer {
 .clearfix::after {
   clear: both;
 }
+@media only screen and (min-width: 450px) {
+  h2{
+    font-size: 55px;
+    font-family: circe,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+   }
+ 
+  h3{
+    font-size: 40px;
+    font-family: circe,sans-serif;
+    font-weight: 700;
+    color: #30373D;
+    font-style: normal;
+    text-transform: uppercase;
+   }
 
+}
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
@@ -1155,14 +1173,6 @@ p.closer {
 @media only screen and (min-width: 700px) {
   /* Style adjustments for viewports that meet the condition */
 
-  h3{
-    font-size: 40px;
-    font-family: circe,sans-serif;
-    font-weight: 700;
-    color: #30373D;
-    font-style: normal;
-    text-transform: uppercase;
-   }
 
   .watermark-full{
     padding-top: 30px;
