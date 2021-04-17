@@ -223,7 +223,8 @@ textarea {
 
 .treename{
   padding-bottom: 20px;
-  width: 40%;
+  width: 50%;
+  padding-right: 2%;
   align-self: flex-start;
 }
 
