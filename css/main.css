@@ -874,10 +874,9 @@ a.linky:hover{
 .black {
   background:#30373D;
   background-size: cover;
-  height: 100vh;
   width: 85%; 
-  padding-left: 10%;
-  padding-right: 5%;
+  padding-left: 5%;
+  padding-right: 3%;
 }
 
 .white_text {
