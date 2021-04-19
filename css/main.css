@@ -205,11 +205,12 @@ textarea {
  .nav_normal {
   background-color: #30373D;
   background-size: cover;
-  min-height: 150px;
+  min-height: 160px;
   padding: 0% 5%;
   padding-top: 30px;
   color: white;
   text-decoration: none;
+  border-bottom:solid 8px #B15654 ;
 
  }
  .watermark-full{
