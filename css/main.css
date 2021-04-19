@@ -277,8 +277,7 @@ align-self: flex-end;
   margin-bottom: 1em;
   border-bottom: 8px solid #B15654;
   height: 8em;
-  background-size: cover;
-  background-image: linear-gradient(0deg, rgba(48,55,61,1) -30%, rgba(2,0,36,0) 70%), url("../img/gallery/01/03.jpg"); 
+
 }
 
 
@@ -287,24 +286,232 @@ align-self: flex-end;
   border-bottom: 8px solid #B15654;
   width: 8em;
   height: 8em;
+  ; 
+}
+
+.tb-1 {
+  background-size: cover;
+  background-image: linear-gradient(0deg, rgba(48,55,61,1) -30%, rgba(2,0,36,0) 70%), url("../img/gallery/01/03.jpg"); 
+
+}
+.tb-2 {
+  background-size: cover;
+  background-image: linear-gradient(0deg, rgba(48,55,61,1) -30%, rgba(2,0,36,0) 70%), url("../img/gallery/02/03.jpg"); 
+
+}
+.tb-3 {
   background-size: cover;
   background-image: linear-gradient(0deg, rgba(48,55,61,1) -30%, rgba(2,0,36,0) 70%), url("../img/gallery/03/03.jpg"); 
+
 }
+.tb-4 {
+  background-size: cover;
+  background-image: linear-gradient(0deg, rgba(48,55,61,1) -30%, rgba(2,0,36,0) 70%), url("../img/gallery/04/03.jpg"); 
+
+}
+.tb-5 {
+  background-size: cover;
+  background-image: linear-gradient(0deg, rgba(48,55,61,1) -30%, rgba(2,0,36,0) 70%), url("../img/gallery/05/03.jpg"); 
+
+}
+.tb-6 {
+  background-size: cover;
+  background-image: linear-gradient(0deg, rgba(48,55,61,1) -30%, rgba(2,0,36,0) 70%), url("../img/gallery/06/03.jpg"); 
+
+}
+.tb-7 {
+  background-size: cover;
+  background-image: linear-gradient(0deg, rgba(48,55,61,1) -30%, rgba(2,0,36,0) 70%), url("../img/gallery/07/03.jpg"); 
+
+}
+.tb-8 {
+  background-size: cover;
+  background-image: linear-gradient(0deg, rgba(48,55,61,1) -30%, rgba(2,0,36,0) 70%), url("../img/gallery/08/03.jpg"); 
+
+}
+.tb-9 {
+  background-size: cover;
+  background-image: linear-gradient(0deg, rgba(48,55,61,1) -30%, rgba(2,0,36,0) 70%), url("../img/gallery/09/03.jpg"); 
+
+}
+.tb-10 {
+  background-size: cover;
+  background-image: linear-gradient(0deg, rgba(48,55,61,1) -30%, rgba(2,0,36,0) 70%), url("../img/gallery/10/03.jpg"); 
+
+}
+.tb-1 {
+  background-size: cover;
+  background-image: linear-gradient(0deg, rgba(48,55,61,1) -30%, rgba(2,0,36,0) 70%), url("../img/gallery/01/03.jpg"); 
+
+}
+.tb-1 {
+  background-size: cover;
+  background-image: linear-gradient(0deg, rgba(48,55,61,1) -30%, rgba(2,0,36,0) 70%), url("../img/gallery/01/03.jpg"); 
+
+}
+.tb-11 {
+  background-size: cover;
+  background-image: linear-gradient(0deg, rgba(48,55,61,1) -30%, rgba(2,0,36,0) 70%), url("../img/gallery/11/03.jpg"); 
+
+}
+.tb-12 {
+  background-size: cover;
+  background-image: linear-gradient(0deg, rgba(48,55,61,1) -30%, rgba(2,0,36,0) 70%), url("../img/gallery/12/03.jpg"); 
+
+}
+.tb-13 {
+  background-size: cover;
+  background-image: linear-gradient(0deg, rgba(48,55,61,1) -30%, rgba(2,0,36,0) 70%), url("../img/gallery/13/03.jpg"); 
+
+}
+.tb-14 {
+  background-size: cover;
+  background-image: linear-gradient(0deg, rgba(48,55,61,1) -30%, rgba(2,0,36,0) 70%), url("../img/gallery/14/03.jpg"); 
+
+}
+.tb-15 {
+  background-size: cover;
+  background-image: linear-gradient(0deg, rgba(48,55,61,1) -30%, rgba(2,0,36,0) 70%), url("../img/gallery/15/03.jpg"); 
+
+}
+.tb-16 {
+  background-size: cover;
+  background-image: linear-gradient(0deg, rgba(48,55,61,1) -30%, rgba(2,0,36,0) 70%), url("../img/gallery/16/03.jpg"); 
+
+}
+.tb-17 {
+  background-size: cover;
+  background-image: linear-gradient(0deg, rgba(48,55,61,1) -30%, rgba(2,0,36,0) 70%), url("../img/gallery/17/03.jpg"); 
+
+}
+.tb-18{
+  background-size: cover;
+  background-image: linear-gradient(0deg, rgba(48,55,61,1) -30%, rgba(2,0,36,0) 70%), url("../img/gallery/18/03.jpg"); 
+
+}
+.tb-19 {
+  background-size: cover;
+  background-image: linear-gradient(0deg, rgba(48,55,61,1) -30%, rgba(2,0,36,0) 70%), url("../img/gallery/19/03.jpg"); 
+
+}
+.tb-20 {
+  background-size: cover;
+  background-image: linear-gradient(0deg, rgba(48,55,61,1) -30%, rgba(2,0,36,0) 70%), url("../img/gallery/20/03.jpg"); 
+
+}
+.tb-21 {
+  background-size: cover;
+  background-image: linear-gradient(0deg, rgba(48,55,61,1) -30%, rgba(2,0,36,0) 70%), url("../img/gallery/21/03.jpg"); 
+
+}
+.tb-22 {
+  background-size: cover;
+  background-image: linear-gradient(0deg, rgba(48,55,61,1) -30%, rgba(2,0,36,0) 70%), url("../img/gallery/22/03.jpg"); 
+
+}
+.tb-23 {
+  background-size: cover;
+  background-image: linear-gradient(0deg, rgba(48,55,61,1) -30%, rgba(2,0,36,0) 70%), url("../img/gallery/23/03.jpg"); 
+
+}
+.tb-24 {
+  background-size: cover;
+  background-image: linear-gradient(0deg, rgba(48,55,61,1) -30%, rgba(2,0,36,0) 70%), url("../img/gallery/24/03.jpg"); 
+
+}
+.tb-25 {
+  background-size: cover;
+  background-image: linear-gradient(0deg, rgba(48,55,61,1) -30%, rgba(2,0,36,0) 70%), url("../img/gallery/25/03.jpg"); 
+
+}
+.tb-26 {
+  background-size: cover;
+  background-image: linear-gradient(0deg, rgba(48,55,61,1) -30%, rgba(2,0,36,0) 70%), url("../img/gallery/26/03.jpg"); 
+
+}
+.tb-27 {
+  background-size: cover;
+  background-image: linear-gradient(0deg, rgba(48,55,61,1) -30%, rgba(2,0,36,0) 70%), url("../img/gallery/27/03.jpg"); 
+
+}
+.tb-28 {
+  background-size: cover;
+  background-image: linear-gradient(0deg, rgba(48,55,61,1) -30%, rgba(2,0,36,0) 70%), url("../img/gallery/28/03.jpg"); 
+
+}
+.tb-29 {
+  background-size: cover;
+  background-image: linear-gradient(0deg, rgba(48,55,61,1) -30%, rgba(2,0,36,0) 70%), url("../img/gallery/29/03.jpg"); 
+
+}
+.tb-30 {
+  background-size: cover;
+  background-image: linear-gradient(0deg, rgba(48,55,61,1) -30%, rgba(2,0,36,0) 70%), url("../img/gallery/30/03.jpg"); 
+
+}
+.tb-31 {
+  background-size: cover;
+  background-image: linear-gradient(0deg, rgba(48,55,61,1) -30%, rgba(2,0,36,0) 70%), url("../img/gallery/31/03.jpg"); 
+
+}
+.tb-32 {
+  background-size: cover;
+  background-image: linear-gradient(0deg, rgba(48,55,61,1) -30%, rgba(2,0,36,0) 70%), url("../img/gallery/32/03.jpg"); 
+
+}
+.tb-33 {
+  background-size: cover;
+  background-image: linear-gradient(0deg, rgba(48,55,61,1) -30%, rgba(2,0,36,0) 70%), url("../img/gallery/33/03.jpg"); 
+
+}
+.tb-34 {
+  background-size: cover;
+  background-image: linear-gradient(0deg, rgba(48,55,61,1) -30%, rgba(2,0,36,0) 70%), url("../img/gallery/34/03.jpg"); 
+
+}
+.tb-35 {
+  background-size: cover;
+  background-image: linear-gradient(0deg, rgba(48,55,61,1) -30%, rgba(2,0,36,0) 70%), url("../img/gallery/35/03.jpg"); 
+
+}
+.tb-36 {
+  background-size: cover;
+  background-image: linear-gradient(0deg, rgba(48,55,61,1) -30%, rgba(2,0,36,0) 70%), url("../img/gallery/36/03.jpg"); 
+
+}
+.tb-37{
+  background-size: cover;
+  background-image: linear-gradient(0deg, rgba(48,55,61,1) -30%, rgba(2,0,36,0) 70%), url("../img/gallery/37/03.jpg"); 
+
+}
+.tb-38 {
+  background-size: cover;
+  background-image: linear-gradient(0deg, rgba(48,55,61,1) -30%, rgba(2,0,36,0) 70%), url("../img/gallery/38/03.jpg"); 
+
+}
+.tb-39 {
+  background-size: cover;
+  background-image: linear-gradient(0deg, rgba(48,55,61,1) -30%, rgba(2,0,36,0) 70%), url("../img/gallery/39/03.jpg"); 
+
+}
+
+
 .n-1b, .n-2b{
   align-self: flex-end;
 
 }
 p.smallnearby{
-  font-size: 22px;
+  font-size: 18px;
   text-align: left;
   font-family: circe,sans-serif;
   font-weight: 700;
-  margin: 0px 5px;
+  margin: 0px 10px;
   margin-bottom: 10px;
   color: white;
   font-style: normal;
   text-transform: uppercase;
 }
+
 h1.smallnearby{
   font-size: 70px;
   opacity: .8;
@@ -1162,6 +1369,17 @@ p.closer {
     font-style: normal;
     text-transform: uppercase;
    }
+   p.smallnearby{
+    font-size: 22px;
+    text-align: left;
+    font-family: circe,sans-serif;
+    font-weight: 700;
+    margin: 0px 10px;
+    margin-bottom: 10px;
+    color: white;
+    font-style: normal;
+    text-transform: uppercase;
+  }
 
 }
 /* ==========================================================================
