@@ -148,6 +148,12 @@ textarea {
     color: white;
     font-size: 18px;
   }
+  .white_text_menu_u{
+    color: white;
+    text-decoration: underline;
+    font-size: 18px;
+  } 
+
   .white_text_menu2{
     color: white;
     font-size: 14px;
